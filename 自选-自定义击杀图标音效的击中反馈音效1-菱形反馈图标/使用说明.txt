@@ -1,0 +1,17 @@
+!hm
+!hitmarker
+!hitmarkers
+!bhm
+!hmarker 都是唤醒风格菜单（默认是风格:准星变色+提示）
+
+------------------------------------------------------------
+以下内容均为单机内容，多人的时候不展示或者共用（HUD）
+!crosshair_green 255 换自己的准星颜色green
+!crosshair_green_change 255 换自己的反馈变色时准星颜色green
+!crosshair_red 255 换自己的准星颜色red
+!crosshair_red_change 255 换自己的反馈变色时准星颜色red
+!crosshair_blue 255 换自己的准星颜色blue
+!crosshair_blue_change 255 换自己的反馈变色时准星颜色blue
+(默认是绿色，反馈为红色)
+COD单人播报最好别改位置
+-------------------------------------------------------------
