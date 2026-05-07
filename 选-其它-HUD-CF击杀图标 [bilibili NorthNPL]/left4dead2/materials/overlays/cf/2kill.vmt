@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "Overlays/cf/2kill"
+	"$REFRACTTINT" "{128 128 128}"
+	"$additive" "1"
+	//"$translucent" 1
+	
+}
