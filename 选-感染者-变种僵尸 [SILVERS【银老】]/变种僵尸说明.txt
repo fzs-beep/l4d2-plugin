@@ -1,0 +1,174 @@
+谢谢：
+Mr. Man - 命名插件、想法和测试。
+januto - 在他们的服务器上进行测试。
+Jay_ombie - 想法和测试。
+raziEiL - 想法和测试.
+[阻力]Yoshi - 测试。
+JoBarfCreepy - 测试.
+xioSlayer - 测试中。
+Recon-1 - 测试。
+iRogue - 测试。
+
+
+类型：
+
+炸弹：【黄】
+炸弹变种人在攻击、受伤（防御）或头部中弹时有随机几率爆炸。
+
+火：【红】
+在燃烧弹或烟花箱爆炸中行走的普通火有随机几率变异成火变种人。这些僵尸是防火的，在攻击或防御时有几率掉火。
+
+幽灵：【白】
+半透明僵尸。
+
+心灵：【紫】
+靠近这些僵尸会改变你的屏幕颜色。
+
+烟雾：【青】
+靠近这些僵尸的玩家会受到伤害。
+
+唾液：【绿】
+常见的穿过唾液酸的物种有随机几率变异成唾液突变体。当被这些僵尸击中时，玩家会受到几秒钟的伤害。
+
+特斯拉：【蓝】
+尼古拉·特斯拉变种人，将玩家从变种人手中甩开。
+
+
+------------管理员命令-----------------
+sm_mutantsrefresh   // 刷新插件并重新加载数据配置。
+sm_mutantbomb       //生成一个变异炸弹僵尸。
+sm_mutantfire       // 生成一个变异的火僵尸。
+sm_mutantghost      //生成一个变异的幽灵僵尸。
+sm_mutantmind       // 生成一个变异的心灵僵尸。
+sm_mutantsmoke      // 生成一个变异烟雾僵尸。
+sm_mutantspit       //生成一个变异的吐痰僵尸。
+sm_mutanttesla      //生成一个变异的特斯拉僵尸。
+sm_mutants          // 生成所有变异僵尸
+
+更新日志
+1.27 (19-Feb-2023)
+    - Fixed Fire Mutants taking fire damage from other sources. Thanks to "BystanderZK" for reporting.
+
+1.26 (10-Feb-2023)
+    - Fixed invincible Fire Mutants. Thanks to "sonic155" and "Maur0" for reporting and testing.
+    - Fixed Survivor bots from killing common infected instead of converting them to Fire Mutants.
+    - Removed the "Smoke" type key value "color" since it was never meant to exist, the smoke is a particle and color cannot be changed. Thanks to "sonic155" for reporting.
+
+1.25 (03-Feb-2023)
+    - Changed the method of converting and preventing Fire Mutants from dying. Thanks to "sonic155" for reporting.
+    - Added another check to prevent invisible common remaining alive.
+
+1.24 (02-Feb-2023)
+    - Fixed Fire Mutants not attacking when initially ignited.
+    - Fixed invincible Fire Mutants bug from the last 3 plugin updates. Thanks to "Mi.Cura" for reporting.
+
+1.23 (27-Jan-2023)
+    - Fixed invisible Fire Mutants bug from the last 2 plugin updates. Thanks to "Mi.Cura" for reporting.
+
+1.22 (25-Jan-2023)
+    - Added "drop_damage" data config setting to Fire Mutants, allowing dropped fire damage to be controlled independently from the "damage" key.
+    - Fixed converting common infected into Fire Mutants when shot by normal bullets.
+    - Fixed incendiary bullets not always converting common infected to Fire Mutants.
+
+1.21 (24-Jan-2023)
+    - Fixed incendiary bullets not always converting common infected to Fire Mutants.
+    - Fixed not setting the config health value on Fire Mutants in some circumstances.
+    - Fixed various fire damage causing Fire Mutants to die prematurely.
+    - Thanks to "BystanderZK" for reporting and testing.
+
+1.20 (20-Jan-2023)
+    - L4D2: Added "incendiary" data config setting to Fire Mutants, allowing common infected to convert to Fire Mutants when shot with Incendiary ammo.
+    - Fixed common infected walking through fire not having the charred model effect.
+
+1.19 (15-Dec-2022)
+    - Fixed changing "attacker" to entity reference in OnTakeDamage which affects other plugins. Thanks to "Hawkins" for reporting.
+
+1.18 (12-Dec-2022)
+    - Fixed "Fire" type not spawning when walking through fire. Thanks to "BystanderZK" for reporting.
+
+1.17 (03-Dec-2022)
+    - Fixed invalid entity errors. Thanks to "Mi.Cura" for reporting.
+
+1.16 (15-Aug-2022)
+    - Changes to load the "l4d_mutants.cfg" data config based on the z_difficulty value if the file exists.
+    - Valid filenames are "l4d_mutants_easy.cfg", "l4d_mutants_normal.cfg", "l4d_mutants_hard.cfg" and "l4d_mutants_impossible.cfg".
+    - Requested by "Hawkins".
+
+1.15 (30-Jul-2022)
+    - Potential fix for rare server crashes caused by "CBaseEntityOutput::FireOutput". Thanks to "Hawkins" for reporting.
+
+1.14 (07-Jun-2022)
+    - Fixed mutant zombies spawning when their "random" data config setting values were set to "0". Thanks to "Winn" for reporting.
+    - Removed minimum and maximum value restriction for individual mutants "random" data config setting.
+
+1.13 (12-Sep-2021)
+    - L4D1: Fixed constantly spawning Mutant Zombies due to not restricting a line of code for L4D2.
+
+1.12 (09-Oct-2020)
+    - Changed "OnClientPostAdminCheck" to "OnClientPutInServer" - to fix any issues if Steam service is down.
+
+1.11 (30-Sep-2020)
+    - Fixed compile errors on SM 1.11.
+
+1.10 (15-May-2020)
+    - Replaced "point_hurt" entity with "SDKHooks_TakeDamage" function.
+
+1.9 (10-May-2020)
+    - Extra checks to prevent "IsAllowedGameMode" throwing errors.
+    - Various changes to tidy up code.
+    - Various optimizations and fixes.
+
+1.8 (08-Apr-2020)
+    - Fixed invalid entity index errors. Thanks to "sxslmk" reporting.
+
+1.7 (01-Apr-2020)
+    - Fixed not precaching "env_shake" causing the Bomb type to stutter on first explosion. Thanks to "TiTz" for reporting.
+    - Fixed clients giving themselves damage instead of from the server. Thanks to "TiTz" for reporting.
+    - Fixed "IsAllowedGameMode" from throwing errors when the "_tog" cvar was changed before MapStart.
+
+1.6 (18-Mar-2020)
+    - Changed the random spawn selection method to use >= instead of > value.
+    - Now you can specify "random" "1" in the config to make every common infected spawned a Mutant Zombie.
+    - This also applies to each types individual "random" setting.
+
+    - Added "uncommon" data config setting. This allows uncommon infected to also be Mutants. Default off.
+    - Fixed "check" data config setting from never actually being read.
+
+1.5.1 (28-Jun-2019)
+    - Changed PrecacheParticle method.
+
+1.5.0 (05-May-2018)
+    - Converted plugin source to the latest syntax utilizing methodmaps. Requires SourceMod 1.8 or newer.
+    - Changed cvar "l4d_mutants_modes_tog" now supports L4D1.
+
+1.4.3 (01-Apr-2018)
+    - Fixed bug in L4D2.
+    - Uploaded correct data config for L4D2, previous one broke Tesla and Spit mutants.
+
+1.4.2 (31-Mar-2018)
+    - Tesla Mutants now working in L4D1, with reduced visual effects.
+
+1.4.1 (31-Mar-2018)
+    - Added check for very rare and very strange error - "Dragokas".
+    - Fixed particle error in L4D1.
+    - Fixed bomb position in L4D1.
+    - Data config renamed to "l4d_mutants.cfg".
+
+1.4 (23-Mar-2018)
+    - Initial support for L4D1.
+
+1.3 (10-May-2012)
+    - Added cvar "l4d2_mutants_modes_off" to control which game modes the plugin works in.
+    - Added cvar "l4d2_mutants_modes_tog" same as above, but only works for L4D2.
+    - Fixed a bug when gascans etc exploded, which prevented common from being ignited.
+    - Fixed a bug with the "random" option in the config not working as expected.
+
+1.2 (15-Jan-2012)
+    - Fixed "effects" not setting correctly on "Mind" type.
+
+1.1 (14-Jan-2012)
+    - Added command "sm_mutantsrefresh" to refresh the plugin and reload the data config.
+    - Fixed "types" config not setting when "random" was set to 0.
+
+1.0 (01-Jan-2012)
+    - Initial release.
