@@ -1,0 +1,27 @@
+原文：
+About:
+Plays music when players are travelling inside an elevator.
+Only elevators on official Valve maps in L4D and L4D2 play tracks.
+Please list maps which contain lifts if you want support for those. stripper_dump's would be useful.
+
+
+Tracks Config:
+Config included with 5 tracks to randomly select from.
+Tracks must be specified on new lines within the config.
+The paths must be relative to the \sound\ folder.
+Maximum of 32 tracks (change MAX_TRACKS value and recompile if you want more.)
+
+
+
+翻译：
+
+当玩家在电梯内旅行时播放音乐。
+只有 求生之路1代和2代的官方 V地图上的电梯才能播放音乐。
+如果您需要支持第三方图，请列出包含电梯的地图名 ，在stripper_dump会很有用。
+
+
+音乐配置：
+包括 5 个曲目，可随机选择。
+必须在配置中的新行上指定音乐。
+路径必须相对于 \sound\ 文件夹。
+最多 32 个曲目（更改MAX_TRACKS值，如果需要更多，请重新编译。
