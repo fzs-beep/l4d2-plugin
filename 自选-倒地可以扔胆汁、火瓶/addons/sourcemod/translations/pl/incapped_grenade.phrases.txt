@@ -1,0 +1,11 @@
+"Phrases"
+{
+	"Information"
+	{
+		"pl"	"Podpowiedź"
+	}
+	"Throw a grenade"
+	{
+		"pl"	"Możesz rzucić granatem kiedy jesteś obezwładniony,\nnaciśnij MOUSE2 aby zmienić broń"
+	}
+}
