@@ -1,0 +1,31 @@
+"Phrases"
+{
+	"ACTIVATED"
+	{
+		"en"			"已获取敏锐感知"
+	}
+	"DEACTIVATED"
+	{
+		"en"			"敏锐感知已失效"
+	}
+	"DURATIONEXTENDED"
+	{
+		"en"			"已延时敏锐感知"
+	}
+	"COMMANDUSAGE"
+	{
+		"en"			"控制台输入: sm_extendedsight <on|off>"
+	}
+	"ACTIVATEDPERMANENTLY"
+	{
+		"en"			"永久激活敏锐感知"
+	}
+	"ALREADYACTIVE"
+	{
+		"en"			"敏锐感知已被激活"
+	}	
+	"NOTACTIVE"
+	{
+		"en"			"敏锐感知未被激活"
+	}
+}
