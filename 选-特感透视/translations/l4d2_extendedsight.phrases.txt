@@ -1,0 +1,31 @@
+"Phrases"
+{
+	"ACTIVATED"
+	{
+		"en"			"已获得全图特感透视功能！"
+	}
+	"DEACTIVATED"
+	{
+		"en"			"特感透视已失效！"
+	}
+	"DURATIONEXTENDED"
+	{
+		"en"			"特感透视时间延长！"
+	}
+	"COMMANDUSAGE"
+	{
+		"en"			"Usage: sm_extendedsight <on|off>"
+	}
+	"ACTIVATEDPERMANENTLY"
+	{
+		"en"			"管理员开启全图特感透视！"
+	}
+	"ALREADYACTIVE"
+	{
+		"en"			"特感透视已激活！"
+	}	
+	"NOTACTIVE"
+	{
+		"en"			"特感透视未激活！"
+	}
+}

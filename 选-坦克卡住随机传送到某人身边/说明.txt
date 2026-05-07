@@ -1,0 +1,3 @@
+sm_cvar tank_stuck_time_suicide 9999
+sm_cvar tank_stuck_failsafe 0 
+添加两个相关参数到server.cfg
