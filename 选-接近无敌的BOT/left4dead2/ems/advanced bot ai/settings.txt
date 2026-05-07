@@ -1,0 +1,8 @@
+BOT_AI_TEST_MOD = 0
+NeedGasFinding = true
+NeedThrowGrenade = true
+Immunity = true
+ESCORT = false
+UNSTICK = true
+Versus_Mode = false
+Server_Mode = true
