@@ -1,0 +1,23 @@
+"Advertisements"
+{
+	"1"
+	{
+		"type"	"S"
+		"text"	"{GREEN}[注意]{TEAM}您当前未更改插件功能的发送文本，请在{GREEN} left4dead2\addons\sourcemod\configs{TEAM}更改文本"
+	}
+	"2"
+	{
+		"type"	"S"
+		"text"	"{GREEN}[注意]{TEAM}您当前未更改插件功能的发送文本，请在{GREEN} left4dead2\addons\sourcemod\configs{TEAM}更改文本"
+	}
+	"3"
+	{
+		"type"	"S"
+		"text"	"{GREEN}[注意]{TEAM}您当前未更改插件功能的发送文本，请在{GREEN} left4dead2\addons\sourcemod\configs{TEAM}更改文本"
+	}
+	"4"
+	{
+		"type"	"S"
+		"text"	"{GREEN}[注意]{TEAM}您当前未更改插件功能的发送文本，请在{GREEN} left4dead2\addons\sourcemod\configs{TEAM}更改文本"
+	}
+}
