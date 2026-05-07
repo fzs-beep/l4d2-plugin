@@ -1,0 +1,84 @@
+需要安装插件前置扩展：
+Cvar Configs Updater (1.7)
+
+-----------------英文原版--------------------
+Creates an F/A-18 Hornet fly past and AGM-65 Maverick air-to-ground missile.
+Explosions stumble and damage near by players/common. Cvars provided to set damage, distance and stumble.
+See the Plugins Structure section below for more info.
+Video demonstration - Thanks to "sonic155" for recording.
+Additional plugins can be created to call the F-18 Airstrike, see l4d2_airstrike.dead_air.sp and l4d2_airstrike.tank.sp for examples.
+
+
+Thanks:
+gilmon - For the idea.
+Dont Fear The Reaper - Lots of help with the idea, suggestions and testing.
+disawar1 - Helped testing.
+Sev / DrDarkTempler - For the vocalize idea.
+worminater - Lots of help with version 1.2.
+
+----------------中文----------------------
+制造F/A-18大黄蜂飞越和AGM-65小牛空对地导弹。
+玩家/普通玩家附近发生爆炸并造成伤害。Cvars用于设置损坏、距离和绊倒。
+有关更多信息，请参阅下面的插件结构部分。
+视频演示-感谢“sonic155”的录制。
+可以创建额外的插件来调用F-18空袭，例如参见l4d2_Airstrike.dead_air.sp和l4d2_airtrike.tank.sp
+
+感谢制作人
+gilmon -为了这个想法。
+Dont Fear The Reaper - 在想法、建议和测试方面有很多帮助
+disawar1 - 有助于测试
+Sev / DrDarkTempler - 为了发声的想法.
+worminater - 1.2版本有很多帮助
+
+
+--------------使用控制台命令【CN】-------------
+
+// 显示一个菜单，其中包含显示/保存空袭和触发器的选项。
+sm_strike
+
+//创建空袭，用法：sm_strikes<#userid|name><type:1=瞄准位置。2=位置>[可选空袭次数]-OR-矢量位置<X><Y><Z><angle>[可选空袭数量]
+sm_strikes
+
+// 显示一个菜单，其中包含显示/保存空袭和触发器的选项。
+//需要：“l4d2_airstrike.triggers”插件模块
+sm_strike_triggers 
+
+--------------使用控制台命令【EN】-------------
+// Displays a menu with options to show/save an airstrike and triggers.
+sm_strike
+
+// Create an Airstrike. Usage: sm_strikes <#userid|name> <type: 1=Aim position. 2=On position> [optional number of airstrikes] -OR- vector position <X> <Y> <Z> <angle> [optional number of airstrikes]
+sm_strikes
+
+// Displays a menu with options to show/save an airstrike and triggers.
+// Requires: "l4d2_airstrike.triggers" plugin module.
+sm_strike_triggers 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
