@@ -1,0 +1,16 @@
+☆☆☆要使用插件，请点击鼠标中键[鼠标滚轮]使用机瞄
+==========================
+!!!注意!!!
+1.不支持原版枪械和部分模组
+2.☆☆☆此插件需要作者有在武器mod做出对插件的机瞄支持才能正常使用
+---------------------------------
+当前已知支持的mod武器↓
+
+
+1.[ADS] MWR M4A1 SOPMOD - m16
+2..Ash-12
+https://steamcommunity.com/sharedfiles/filedetails/?id=2050566266&searchtext=ash12
+3.PP-19
+https://steamcommunity.com/sharedfiles/filedetails/?id=2936622325&searchtext=PP-19
+4.AA-12
+ https://steamcommunity.com/sharedfiles/filedetails/?id=567402439
