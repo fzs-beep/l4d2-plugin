@@ -1,0 +1,20 @@
+原文：
+Description:
+
+Then everybody has a parachute.
+To use your parachute press and hold your E(+use) button while falling.
+
+hanks:
+shanapu for simple code 
+
+
+
+
+翻译：
+
+描述：
+然后每个人都有一个降落伞。
+要使用降落伞，请在坠落时按住 E（+use） 按钮。
+
+谢谢：
+shanapu 提供简单的代码
