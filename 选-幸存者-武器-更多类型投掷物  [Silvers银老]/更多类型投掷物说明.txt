@@ -1,0 +1,281 @@
+翻译：
+20种不同的类型
+自定义 \data\l4d_grenades.cfg 文件中的许多选项。
+自定义允许的类型以及它们适用于哪种手榴弹。
+更改手榴弹类型的菜单。可与换键方法组合使用。
+玩家可以装备手榴弹并按住 SHOOT （LMB） + SPUSH （RMB） 键来更改手榴弹类型。
+机器人可以使用原型手榴弹。需要外部插件。
+拾取手榴弹时的随机手榴弹类型或客户偏好保存每个手榴弹的选定类型。
+添加新的手榴弹类型应该很容易，所以请随时提出想法。
+
+
+原文：
+20 different types.
+Customize lots of options in the \data\l4d_grenades.cfg file.
+Customize which types to allow and which grenade they work for.
+Menu to change the grenade type. Can be used in combination with the key changing method.
+Players can equip a grenade and hold SHOOT (LMB) + SHOVE (RMB) keys to change grenade type.
+Bots can use Prototype Grenades. Requires external plugin.
+Random grenade type when picking up or client preferences to save selected type for each grenade.
+Adding new grenade types should be easy so feel free to suggest ideas
+
+
+
+----------炸弹类型----------------
+燃烧弹：
+- 炸弹：爆炸性手榴弹。撞击时引爆。
+- 集群：射出多个爆炸性射弹。
+- 烟花：烟花箱爆炸。  
+- 烟雾：烟幕隐藏区域。
+- 集群火力：发射多个小火。
+- 高射炮：发射火花点燃附近的敌人。
+- 空袭：火炬发出空袭目的地的信号。（需要按装“F-18 空袭”插件）
+
+土质炸弹：
+- 黑洞：将敌人拉向中心。
+- 闪光弹：引爆时使幸存者和特殊感染者失明。
+- 护盾：减少对区域内幸存者的伤害。
+- 特斯拉：电击区域内的敌人，将他们击退。
+- 子弹：射出多颗子弹。
+- 发光：在短时间内透过墙壁发光。
+- 武器：在爆炸时制造武器。通过插件配置选择类型。
+
+胆汁：（在L4D1[求生之路1代游戏]中这些类型分为燃烧弹和土质炸弹）
+- 化学：地面上的酸性水坑以伤害敌人。
+- 冰冻器：冻结影响范围内的敌人。
+- 医生：治疗 - 仅对幸存者有效。
+- 蒸发器：溶解区域内的敌人。
+- 灭火器：扑灭地面和玩家的火势，可以消除婴儿潮呕吐效果和喷出酸（L4D2）。
+- 反重力：使敌人跳起来并慢慢落下。
+
+
+--------------------更新日志-----------------------
+1.49 (17-Jun-2024)
+    - Fixed the "Chemical" type not damaging Special Infected. Thanks to "Leobrr" for reporting.
+    - Fixed conflict with "Detonation Force" plugin flinging players on grenade explosion. Thanks to "JustMadMan" for reporting.
+
+1.48 (30-Apr-2024)
+    - Fixed physics objects not being pushed or broken if set within the config.
+    - Fixed random rare crashes on map change. Thanks to "JustMadMan" for reporting.
+
+1.47 (21-Apr-2024)
+    - Added data setting "effect_types" for the "Extinguisher" type to set if the grenade can remove fires, boomer effect and Spitter acid. Requested by "blackbread183".
+    - Fixed duplicate messages when equipping a grenade.
+
+1.46 (22-Nov-2023)
+    - Fixed not pushing the Witch. Thanks to "HarryPotter" for finding and fixing.
+
+1.45 (07-Nov-2023)
+    - Fixed the "Bullets" type damage becoming extremely high. Thanks to "HarryPotter" for finding and fixing.
+
+1.44 (15-Jun-2022)
+    - Added data setting "effect_freeze" for the "Freezer" type to set how long Survivors and Special Infected are frozen for. Requested by "weakestL4D2enjoyer".
+    - Added data setting "damage_bonus" for the "Glow" type to set a damage multiplier while affected by the "Glow". Requested by "weakestL4D2enjoyer".
+    - Changed the "BlackHole" type to not throw Survivors or Special Infected unless they are on the ground.
+    - Changes to fix warnings when compiling on SourceMod 1.11.
+
+1.43 (02-Feb-2022)
+    - Fixed the "Medic" type not following the "targets" data settings. Thanks to "NoroHime" for reporting.
+    - Fixed being able to select the "Airstrike" grenade type if disabled when using M2 to change types. Thanks to "KadabraZz" for reporting.
+
+1.42 (29-Oct-2021)
+    - Changed "Medic" grenade type to allow healing all targets specified, no longer only Survivors. Requested by "Dragokas".
+    - Fixed "Bullets" and "Freezer" types not excluding the tank correctly.
+
+1.41 (29-Sep-2021)
+    - Changed method of creating an explosive to prevent it being visible (still sometimes shows, but probably less).
+
+1.40 (19-Sep-2021)
+    - Fixed users without access to the "sm_grenade" command from having different grenade modes when picking up grenades.
+    - Thanks to "Darkwob" for reporting.
+
+1.39 (25-Jul-2021)
+    - Fixed index errors (replaced using "m_iHammerID" with a variable array). Thanks to "Elite Biker" for reporting.
+    - L4D1: Fixed the "Airstrike" potentially showing in the menu.
+
+1.38 (16-Jun-2021)
+    - Added new grenade type "Weapon" to spawn weapons and items when the grenade explodes.
+    - L4D2 only: Added new grenade type: "Airstrike" to call an Airstrike on the grenade explosion position. Requires the "F-18 Airstrike" plugin.
+    - All translation files updated.
+    - Config file updated.
+    - Requested by "Darkwob"
+
+1.37 (04-Jun-2021)
+    - Now tests if clients have access to the "sm_grenade" command to restrict Prototype Grenades to specific users. Requested by "Darkwob".
+    - Use the "sourcemod/configs/admin_overrides.cfg" to modify the command flags required.
+    - Data config change: "Tesla" and "Black Hole" types no longer create a shake on explosion.
+
+1.36 (10-Apr-2021)
+    - Fixed not resetting gravity from the "Anti-Gravity" type when a client died. Thanks to "Voevoda" for reporting.
+
+1.35 (27-Mar-2021)
+    - L4D1: Fixed client console error about unknowing particle "sparks_generic_random" and "fireworks_sparkshower_01e" when using the "Flak" type.
+    - Added "Flak" type "damage_type" config key value to specify which enemies catch on fire instead of stumble.
+    - Changed "Flak" type damage to Blast instead of burn for Special Infected. Thanks to "sbeve" for reporting.
+    - Data config "data/l4d_grenades.cfg" updated to reflect changes.
+
+1.34 (04-Mar-2021)
+    - Fixed affecting special infected ghosts. Thanks to "Voevoda" for reporting.
+
+1.33 (23-Feb-2021)
+    - Fixed errors caused by the last L4D2 update. Thanks to "sonic155" for reporting.
+
+1.32 (15-Feb-2021)
+    - Fixed healing with full health when players are black and white.
+
+1.31 (30-Sep-2020)
+    - Fixed compile errors on SM 1.11.
+
+1.30a (24-Sep-2020)
+    - Compatibility update for L4D2's "The Last Stand" update.
+    - GameData .txt file updated.
+
+1.30 (20-Sep-2020)
+    - Fixed not working in L4D1 due to various L4D2 specific things not being ignored.
+    - GameData for L4D1 updated to fix "CTerrorPlayer::OnStaggered" not being found when detoured by Left4DHooks.
+
+1.29 (18-Sep-2020)
+    - L4D2 only: Added new config keys "damage_acid_comm", "damage_acid_self", "damage_acid_spec" and "damage_acid_surv".
+    - These control the "Chemical" type acid puddle damage. Thanks to "SilentBr" for requesting.
+    - Data config "data/l4d_grenades.cfg" updated to reflect changes.
+
+1.28 (10-Sep-2020)
+    - Fixed "Glow" type not causing any damage. Thanks to "simvolist777" for reporting.
+
+1.27 (01-Sep-2020)
+    - Fixed "Glow" type not instantly removing on player death. Thanks to "piggies" for reporting.
+
+1.26 (27-Aug-2020)
+    - Fixed "mode_switch" option to block keybind control when using "2" value. Thanks to "Winn" for reporting.
+
+1.25 (15-Jul-2020)
+    - Added more checks to prevent gravity reset error. Thanks to "Voevoda" for reporting.
+
+1.24 (14-May-2020)
+    - Fixed grenade types not detonating on impact due to accidental deletion in 1.23 update.
+    - Replaced some "point_hurt" damage calls with "SDKHooks_TakeDamage" function.
+    - Support for compiling on SourceMod 1.11.
+
+1.23 (10-May-2020)
+    - Added better error log message when gamedata file is missing.
+    - Added random grenade spin when thrown if Left4DHooks is detected.
+    - Extra checks to prevent "IsAllowedGameMode" throwing errors.
+    - Fixed grenades not sticking if enabled, unless they hit a client.
+    - Various changes to tidy up code.
+    - Various optimizations and fixes.
+
+1.22 (01-Apr-2020)
+    - Fixed "IsAllowedGameMode" from throwing errors when the "_tog" cvar was changed before MapStart.
+    - Fixed not precaching "env_shake" which caused stutter on first explosion.
+
+1.21 (03-Mar-2020)
+    - Fixed 2 particles missing from being precached. Thanks to "foxhound27" for reporting.
+
+1.20 (29-Feb-2020)
+    - Fixed conflict with "Detonation Force" plugin. Thanks to "hoanganh81097" for reporting.
+    - This will also fix conflicts with any other plugin detecting when a grenade projectile is destroyed.
+
+1.19 (04-Feb-2020)
+    - Fixed dissolve from "Vaporizer" type potentially causing godmode zombies.
+
+1.18 (03-Feb-2020)
+    - Fixed conflict with "Bile The World" plugin. Thanks to "3aljiyavslgazana" for reporting.
+    - Plugin now compiled with SoureMod 1.10. Recompile yourself or time to upgrade your installation.
+
+1.17 (13-Jan-2020)
+    - Fixed players "semi-falling" when colliding the grenade. Thanks to "Dragokas" for reporting a fix.
+
+1.16 (05-Jan-2020)
+    - Added additional checks to prevent OnWeaponEquip errors. Thanks to "Mr. Man" for reporting.
+    - Added Traditional Chinese translations. Thanks to "fbef0102" for providing.
+
+1.15 (29-Nov-2019)
+    - Added "messages" option in the config to disable hint messages as requested by "BlackSabbarh".
+    - Fixed "preferences" option "0" not resetting grenade type when players take over bots. Thanks to "Voevoda" for reporting.
+
+1.14 (24-Nov-2019)
+    - Added Simplified Chinese translations. Thanks to "asd2323208" for providing.
+    - Fix for potential godmode zombies when using LMC.
+    - Fixed error msg: "Entity 157 (class 'pipe_bomb_projectile') reported ENTITY_CHANGE_NONE but 'm_flCreateTime' changed.".
+
+1.13 (11-Nov-2019)
+    - Added option "0" to "preferences" in the config to give stock grenades on pickup.
+
+1.12 (10-Nov-2019)
+    - Fixed breaking client preferences after map change due to last version fixes.
+
+1.11 (09-Nov-2019)
+    - Small optimizations.
+    - Fixed breaking equip on round restart.
+    - Fixed "Shield" type not working. Thanks to "fbef0102" for reporting.
+
+1.10 (01-Nov-2019)
+    - Changed the way grenade bounce sounds are replaced to prevent plugin conflicts. Thanks to "Lux" for the idea.
+    - Optimizations: Changed string creation to static char for faster CPU cycles. Various string comparison changes.
+    - Now only supports "Gear Transfer" plugin version 2.0 or greater to preserve random grenade type preferences.
+    - Removed 1 frame delay on weapon equip from previous version of supporting "Gear Transfer" plugin.
+    - Fixed "GrenadeMenu_Invalid" PrintToChat not replacing the colors. Thanks to "BHaType" for reporting.
+
+1.9 (23-Oct-2019)
+    - Fixed "Freezer" mode not preserving special infected render color. Thanks to "Dragokas" for reporting.
+
+1.8 (23-Oct-2019)
+    - Changed "Bullets" mode projectile sound.
+    - Maybe fixed invalid entity errors again, reported by "KRUTIK".
+    - Minor changes to late loading and turning the plugin on/off.
+
+1.7 (18-Oct-2019)
+    - Fixed handle memory leak.
+
+1.6 (18-Oct-2019)
+    - Fixed invalid entity errors reported by "KRUTIK".
+    - Fixed L4D1 errors reported by "Dragokas".
+    - Fixed not completely disabling everything when the plugin is turned off.
+    - Now prevents ledge hanging when floating in Anti-Gravity.
+
+1.5 (17-Oct-2019)
+    - Added 6 new types: "Extinguisher", "Glow", "Anti-Gravity", "Fire Cluster", "Bullets" and "Flak".
+    - Added command "sm_grenade" to open a menu for choosing the grenade type. Optional args to specify a type.
+    - Added "mode_switch" in the config to control how to change grenade type. Menu and/or key combination.
+    - Auto display and close menu with "mode_switch" when selecting a different type via key combination.
+    - Changed L4D2 vocalizations from "throwing pipebomb" or "throwing molotov" etc to "throwing grenade" when not stock.
+    - Changed grenade bounce impact sound.
+    - Cleaned up the sounds by changing some and adding a few missing ones.
+    - Feature to push and stumble Common Infected now works in L4D1.
+    - Fixed wrong Deafen offset for L4D1 Linux. Fixes "Flashbang".
+    - Fixed wrong OnStaggered signature for Linux L4D1. Fixes staggering clients.
+    - Fixed "Freezer" type not following the "targets" setting.
+    - Fixed "damage_tick" to function for most types. Values smaller than "effect_tick" will use the effect tick time.
+    - Thanks to "Dragokas" for the menu ideas and reporting problems in L4D1.
+
+    - Required updated files:
+    - Config: l4d_grenades.cfg
+    - Gamedata: l4d_grenades.txt
+    - Translations: grenades.phrases.txt.
+
+1.4 (10-Oct-2019)
+    - Added Russian translations. Thanks to "KRUTIK" for providing.
+    - Fixed OnNextEquip errors. Thanks to "KRUTIK" for reporting.
+
+1.3 (10-Oct-2019)
+    - Added support for "Gear Transfer" plugin. For persistent grenade types when "preferences" is set to random grenade mode.
+    - Changed "Vaporizer" to inflict full damage on Common instead of range scaled. Original functionality before 1.1.
+
+1.2 (10-Oct-2019)
+    - Fixed OnWeaponDrop errors. Thanks to "BlackSabbarh" for reporting.
+    - Some optimizations.
+
+1.1 (08-Oct-2019)
+    - Added "bots" in the config to control if bots can use Prototype Grenades. Requires external plugin.
+    - Added "damage_special", "damage_survivors", "damage_tank", "damage_witch" and "damage_physics" in the config to scale damage.
+    - Added "preferences" in the config to save a players selected mode, or give a random grenade type. Persistent with dropping.
+    - Added "targets" in the config to control who can be affected by the grenade effects.
+    - Changed "nade" in the config to use bit flags, which allows all grenade modes to work for all grenades.
+    - Fixed map transition breaking the ability to change grenade modes.
+    - Fixed over-healing when a player has temp health.
+    - Fixed sometimes detonating immediately after throwing.
+    - Fixed sounds not stopping when reloading the plugin during an active grenade.
+    - Updated data config, plugin requires new version, or effects will break: l4d_grenades.cfg.
+
+1.0 (03-Oct-2019)
+    - Initial release.

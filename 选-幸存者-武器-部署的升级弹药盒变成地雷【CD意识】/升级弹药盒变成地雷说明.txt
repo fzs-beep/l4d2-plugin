@@ -1,0 +1,28 @@
+原文：
+Plant a mine instead of deploy the upgradeAmmo pack.
+I write it for my server, now i share it.
+It's funny to plant many mines in the plane/boat when final round end and the finale vehicle coming surprise!
+It's also good for tank.
+You can also shoot the mine to explore the mine，if tank didn't touch the mine.
+
+Mine:
+FF Damage max :20.
+SI Damage: about 2000~
+
+sorry for my poor English.
+
+
+
+
+翻译文：
+埋设地雷而不是部署升级弹药包。
+我为我的服务器写了它，现在我分享它。
+当最后一轮结束时，在飞机/船上埋下许多地雷很有趣，最终的车辆来了惊喜！
+这对坦克也有好处。
+如果坦克没有碰到地雷，你也可以射击地雷来探索地雷。
+
+地雷：
+FF最大伤害：20。
+SI伤害：约2000~
+
+对不起，我的英语不好

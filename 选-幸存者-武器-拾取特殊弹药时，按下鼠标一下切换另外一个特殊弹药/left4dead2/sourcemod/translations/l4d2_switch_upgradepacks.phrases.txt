@@ -1,0 +1,17 @@
+// support {white} {default} or {cyan} {lightgreen} or {orange} {olive} or {green}
+
+"Phrases"
+{
+	"Switch By Hold"
+	{
+		"en"		"{cyan}Hold {orange}Reload Key{cyan} to Switch Upgrade Pack Types"
+		"chi"		"{cyan}按住 {orange}重载 (R) 键{cyan} 来切换升级弹药包类型"
+		"zho"		"{cyan}按住 {orange}重載 (R) 鍵{cyan} 來切換陞級彈藥包類型"
+	}
+	"Switch By Tap"
+	{
+		"en"		"{cyan}Tap {orange}Reload Key{cyan} to Switch Upgrade Pack Types"
+		"chi"		"{cyan}按 {orange}重载 (R) 键{cyan} 来切换升级弹药包类型"
+		"zho"		"{cyan}按 {orange}重載 (R) 鍵{cyan} 來切換陞級彈藥包類型"
+	}
+}
