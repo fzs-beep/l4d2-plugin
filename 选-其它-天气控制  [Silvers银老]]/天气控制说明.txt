@@ -1,0 +1,141 @@
+---------------------CN
+谢谢：
+Dragokas - 编写大部分 L4D1 支持转换。
+bubbabyte - 在他们的服务器上进行了大量测试。为数据配置创建了自定义风暴和描述。
+disawar1 （raziEiL） - 在他们的服务器上有很多错误报告和测试。
+Herbie - 在他们的服务器上进行了大量测试。
+Optics
+alexip121093
+Mr. Man
+[Resistance] Yoshi
+JoBarfCreepy
+Sev
+Worminater
+Chatyak
+
+
+关于：
+在提出问题之前阅读/搜索这篇文章。
+从 1.14 版本开始支持 L4D1！（插件的各种元素将保留以“l4d2”为前缀）。
+不影响强雨风暴（L4D2）。
+查看数据配置以自定义所有地图或单个特定地图的风暴设置。
+如果在天气状态在空闲/风暴之间转换时重置地图天气，雾可能会消失。
+可以保存多个触发器并调整其大小，当幸存者走过时，这些触发器会触发风暴开始。使用 sm_storm 命令和菜单。
+触发器保存到 servers \addons\sourcemod\data\ 文件夹中的 l4d2_storm_triggers.cfg（仅限 L4D2）或 l4d1_storm_triggers.cfg（仅限 L4D1）。
+L4D1 的中文配置翻译可以在这里找到，感谢“ZBzibing”提供。
+
+
+错误：
+Skybox（似乎只有 L4D2）：
+如果您在地图“c8”-“c12”上使用 Valve 地图“c1”-“c5”中的天空盒，则具有“低”着色器设置的用户将看到黑色和紫色缺失纹理图像。来自“c6”-“c13”的天空盒将在地图“c1”-“c5”上执行相同的操作。“C6”、“C7”和“C13”显示蓝色（或其他纯色）背景，而不是缺少的纹理图像。“docks_hdr”天空盒在所有地图上都可以正常工作，适用于所有用户。
+下雨：
+大地图和空旷区域会导致游戏崩溃，尤其是在硬件规格较低的情况下。错误消息为：“引擎错误：索引缓冲区索引太多。告诉程序员 （ 33096>32768 ）“。不要报告此问题，您可以通过在某些地图上将“rain”设置为“1”或“0”来最大程度地减少崩溃的可能性。或者将地图降低到远 z 剪辑（高级）。
+
+
+
+1.天空盒     !!请看图  效果2.jpg
+天空盒可以在数据配置中使用键“light_style”进行更改。需要重新连接或更改地图才能生效。
+可用的天空盒，其名称和图像在此处列出：（L4D2）和（L4D1）。
+自定义第三方天空盒文件应同时上传到内容服务器和游戏服务器上，否则将无法正常工作。
+
+2.地图灯光样式：      !!请看图  效果3.jpg
+地图灯光样式仅影响世界表面（墙壁、地面等），而不影响单个道具。
+可以使用命令sm_maplight和数据配置键“light_style”更改地图光源样式。
+这可能会导致更改时 0.2 秒的低 FPS（可能不明显）。在玩家第一次生成时发生，或在回合开始时，在 5.5、8.0 和 10.0 秒后发生。
+
+3.后处理效果： !!请看图  效果4.jpg
+cvar l4d2_storm_post应用上述后处理效果。当天气进入暴风雨状态时。
+Mutant Zombies 插件中的 Mind 僵尸与此效果冲突。最后生成的将覆盖。例如：
+如果风暴状态是在心灵僵尸生成后开始的，您将不再看到心灵僵尸效果，而只能看到风暴效果，反之亦然。
+
+
+----------------------------EN
+Thanks:
+Dragokas - Writing most of the L4D1 support conversion.
+bubbabyte - Lots of testing on their server. Created custom storms and descriptions for the data config.
+disawar1 (raziEiL) - Lots of bug reports and testing on their server.
+Herbie - Lots of testing on their server.
+Optics
+alexip121093
+Mr. Man
+[Resistance] Yoshi
+JoBarfCreepy
+Sev
+Worminater
+Chatyak
+
+
+About:
+Read/search this post before asking questions.
+Supports L4D1 since version 1.14! (Various elements of the plugin will remain prefixed with "l4d2").
+Does not affect the Hard Rain storm (L4D2).
+View the data config to customise storm settings for all maps or individual specific maps.
+The fog can disappear if you reset the maps weather when the weather state is transitioning between idle/storm.
+Multiple triggers can be saved and sized, which trigger the storm to start when a Survivor walks through. Use the sm_storm command and menu.
+The triggers are saved to l4d2_storm_triggers.cfg (L4D2 only) or l4d1_storm_triggers.cfg (L4D1 only) in your servers \addons\sourcemod\data\ folder.
+Chinese config translation for L4D1 can be found here, thanks to "ZBzibing" for providing.
+
+
+Bugs:
+Skybox (L4D2 only it seems):
+Users with "low" shader settings will see the black and purple missing texture image if you use a skybox from Valve maps "c1" - "c5" on maps "c8" - "c12". Skyboxes from "c6" - "c13" will do the same on maps "c1" - "c5". "c6", "c7" and "c13" display a blue (or other solid color) background instead of the missing texture image. The "docks_hdr" skybox works fine on all maps for all users.
+Rain:
+Large maps and open areas will cause the game to crash, especially with lower hardware specs. The error message is: "Engine error: too many indices for index buffer. . tell a programmer ( 33096>32768 )". DO NOT report this problem, you can minimise the chances of the crash by setting the "rain" to "1" or "0" on some maps. Or lower the maps far z clip (advanced).
+
+
+1.Skybox:   !!请看图  效果2.jpg
+The skybox can be changed in the data config with the key "light_style". Requires reconnecting or a map change to take affect.
+Available skyboxes, their names and images listed here: (L4D2) and (L4D1).
+Custom 3rd party skyboxes files should be uploaded on both content server and game server, otherwise it won't work.
+
+2.Map Light Style:   !!请看图  效果3.jpg
+The map light style only affects the world surfaces (walls, ground, etc) and not individual props.
+The map light style can be changed with the command sm_maplight and the data config key "light_style".
+This may cause 0.2 seconds of low FPS when changed (may not be noticable). Occurs on a player when they first spawn or for everyone on round start, after 5.5, 8.0 and 10.0 seconds.
+
+3.Post Process Effect:   !!请看图  效果4.jpg
+The cvar l4d2_storm_post applies the above post process effect. when weather sets to the storm state.
+The Mind zombie in the Mutant Zombies plugin conflicts with this effect. Which ever last spawned will override. For example:
+If the storm state has started after a mind zombie spawns, you will no longer see the mind zombie effect and only see the storm effect, and vice versa.
+
+
+
+--------------------------使用指令CN-----------------------------------------
+sm_storm          // 打开“风暴”菜单。
+sm_stormstart     // 统计风暴。
+sm_stormstop      // 停止风暴。
+sm_stormrefresh   // 刷新插件，重新加载配置并风暴。
+sm_stormreset     // 停止暴风雨并将天气重置为地图默认值。
+sm_stormconfig    // 显示数据配置中当前加载的部分。
+sm_stormpreset    // 显示一个菜单，列出数据配置中随机部分的预设。允许您选择和更改当前风暴预设。
+sm_lightning      // 产生雷击。
+sm_lightningaim   // 在你瞄准的地方创造一个雷击。
+sm_rains          // 打开/关闭雨水。
+sm_snows          // 打开/关闭雪。
+sm_wind           // 打开/关闭风。
+sm_sun            // 设置太阳颜色。重置时没有参数。关闭：sm_sun 0。使用三个值设置颜色，这些值介于 0-255 之间，用空格分隔：sm_sun <r> <g> <b>.
+sm_fog            // 没有参数可以打开/关闭雾。使用三个值设置颜色，介于 0-255 之间，用空格分隔：sm_fog <r> <g> <b>。
+sm_farz           // 将地图设置为远 z-clip。这将使地图在指定距离后停止渲染内容。用法：sm_farz<distance>。
+sm_maplight       // 设置地图照明。重置时没有参数。用法：sm_maplight：<字符 a-z，允许 1-64 个字符。更多信息： https://developer.valvesoftware.com/wiki/Light#Appearances
+sm_stormset       // 设置雾、背景和太阳颜色。重置时没有参数。使用三个值设置颜色，介于 0-255 之间，用空格分隔：sm_stormset <r> <g> <b>。
+sm_background     // 设置背景颜色。重置时没有参数。使用三个值设置颜色，这些值介于 0-255 之间，用空格分隔：sm_background <r> <g> <b>。
+
+--------------------------使用指令EN-----------------------------------------
+sm_storm          // Opens the Storm menu.
+sm_stormstart     // Stats the Storm if possible.
+sm_stormstop      // Stops the Storm if possible.
+sm_stormrefresh   // Refresh the plugin, reloading the config and storm.
+sm_stormreset     // Stops the storm and resets the weather to the maps default.
+sm_stormconfig    // Display the currently loaded section from the data config.
+sm_stormpreset    // Displays a menu listing presets from the random section in the data config. Allowing you to select and change the current storm preset.
+sm_lightning      // Creates a Lightning Strike.
+sm_lightningaim   // Creates a Lightning Strike where you are aiming.
+sm_rains          // Toggles the rain on/off.
+sm_snows          // Toggles the snow on/off.
+sm_wind           // Toggles the wind on/off.
+sm_sun            // Set the sun color. Reset with no args. Turn off: sm_sun 0. Set the color with three values between 0-255 separated by spaces: sm_sun <r> <g> <b>.
+sm_fog            // No args toggles the fog on/off. Set the color with three values between 0-255 separated by spaces: sm_fog <r> <g> <b>.
+sm_farz           // Set the maps far z-clip. This will make the map stop rendering stuff after the specified distance. Usage: sm_farz <distance>.
+sm_maplight       // Set the maps lighting. Reset with no args. Usage: sm_maplight: <chars a-z, 1-64 chars allowed. More info: https://developer.valvesoftware.com/wiki/Light#Appearances
+sm_stormset       // Sets the fog, background and sun color. Reset with no args. Set the color with three values between 0-255 separated by spaces: sm_stormset <r> <g> <b>.
+sm_background     // Set the background color. Reset with no args. Set the color with three values between 0-255 separated by spaces: sm_background <r> <g> <b>. 

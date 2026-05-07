@@ -1,0 +1,23 @@
+"Advertisements"
+{
+	"1"
+	{
+		"type"	"S"
+		"text"	"{GREEN}[公告]自制灾变：当前难度：噩梦九"
+	}
+	"2"
+	{
+		"type"	"S"
+		"text"	"{GREEN}[公告]{TEAM}死亡自动复活，复活时间：1秒"
+	}
+	"3"
+	{
+		"type"	"S"
+		"text"	"{GREEN}[公告]{TEAM}自制难度较高，请做好心理准备"
+	}
+	"4"
+	{
+		"type"	"S"
+		"text"	"{GREEN}[公告]{TEAM}死亡自动复活，复活时间：1秒"
+	}
+}
